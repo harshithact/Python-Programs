@@ -15,4 +15,5 @@ weight = [10, 20, 30]
 value = [60, 100, 120]
 n = len(value)
 
+
 print(knapsack(capacity, weight, value, n))
