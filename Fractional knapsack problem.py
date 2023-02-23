@@ -1,4 +1,5 @@
 def fractional_knapsack(value, weight, capacity):
+    
     items = list(zip(value, weight))
     items.sort(key=lambda x: x[0] / x[1], reverse=True)
     total_value = 0
