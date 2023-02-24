@@ -1,4 +1,5 @@
 def solve_maze(maze):
+    
     def is_valid(maze, row, col):
         if row < 0 or row >= len(maze) or \
                 col < 0 or col >= len(maze[0]) or \
@@ -10,6 +11,7 @@ def solve_maze(maze):
         if row == len(maze) - 1 and col == len(maze[0]) - 1:
             path.append((row, col))
             return True
+        
         if is_valid(maze, row, col):
             path.append((row, col))
             maze[row][col] = 0
