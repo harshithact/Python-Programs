@@ -5,7 +5,9 @@ def solve_sudoku(puzzle):
         for i in range(9):
             if puzzle[row][i] == val or puzzle[i][col] == val:
                 return False
-        # Check 3x3 square
+            
+       
+    # Check 3x3 square
         
         box_row = (row // 3) * 3
         box_col = (col // 3) * 3
