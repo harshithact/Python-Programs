@@ -6,9 +6,11 @@ def distance(p1, p2):
 def brute_force(points):
     n = len(points)
     min_dist = float('inf')
+    
     for i in range(n-1):
         for j in range(i+1, n):
             dist = distance(points[i], points[j])
+            
             if dist < min_dist:
                 min_dist = dist
     return min_dist
