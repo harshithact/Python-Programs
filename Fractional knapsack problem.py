@@ -6,6 +6,7 @@ def fractional_knapsack(value, weight, capacity):
     for v, w in items:
         if capacity == 0:
             break
+            
         amount = min(w, capacity)
         total_value += amount * (v / w)
         capacity -= amount
