@@ -32,6 +32,7 @@ def solve_sudoku(puzzle):
 
     # Make a copy of the puzzle to avoid modifying the original
     puzzle_copy = [row[:] for row in puzzle]
+    
     # Try to solve the puzzle using backtracking
     if backtrack(puzzle_copy):
         return puzzle_copy
