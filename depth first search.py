@@ -18,6 +18,7 @@ class Graph:
         visited = [False] * len(self.graph)
         self.DFSUtil(v, visited)
 
+
 g = Graph()
 g.addEdge(0, 1)
 g.addEdge(0, 2)
