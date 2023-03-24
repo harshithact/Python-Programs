@@ -7,7 +7,7 @@ def solve_sudoku(puzzle):
                 return False
             
        
-    # Check 3x3 square
+   # Check 3x3 square
         
         box_row = (row // 3) * 3
         box_col = (col // 3) * 3
