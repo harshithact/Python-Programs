@@ -5,7 +5,6 @@ def knapsack(capacity, weight, value, n):
 
     if weight[n - 1] > capacity:
         return knapsack(capacity, weight, value, n - 1)
-
     else:
         return max(value[n - 1] + knapsack(capacity - weight[n - 1], weight, value, n - 1),
                    knapsack(capacity, weight, value, n - 1))
