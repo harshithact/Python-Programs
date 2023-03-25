@@ -1,4 +1,5 @@
 def activity_selection(start, finish):
+    
     n = len(start)
     activities = list(zip(start, finish))
     activities.sort(key=lambda x: x[1])
