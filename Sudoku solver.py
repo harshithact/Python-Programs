@@ -1,13 +1,13 @@
 def solve_sudoku(puzzle):
     def is_valid(puzzle, row, col, val):
         
-   # Check row and column
+  # Check row and column
         for i in range(9):
             if puzzle[row][i] == val or puzzle[i][col] == val:
                 return False
             
        
-   # Check 3x3 square
+  # Check 3x3 square
         
         box_row = (row // 3) * 3
         box_col = (col // 3) * 3
@@ -30,7 +30,7 @@ def solve_sudoku(puzzle):
                     return False
         return True
 
-    # Make a copy of the puzzle to avoid modifying the original
+   # Make a copy of the puzzle to avoid modifying the original
     puzzle_copy = [row[:] for row in puzzle]
     
     # Try to solve the puzzle using backtracking
