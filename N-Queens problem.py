@@ -6,6 +6,7 @@ def solve_n_queens(n):
                     board[i] + i == col + row:
                 return False
         return True
+    
 
     def backtrack(board, row):
         if row == n:
