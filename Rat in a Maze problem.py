@@ -7,6 +7,7 @@ def solve_maze(maze):
             return False
         return True
 
+    
     def backtrack(maze, row, col, path):
         if row == len(maze) - 1 and col == len(maze[0]) - 1:
             path.append((row, col))
